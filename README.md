@@ -40,6 +40,9 @@ struct structure_name {
 // structure declared beforehand
 struct structure_name variable1, variable2, .......;
 
+![image](https://github.com/M-S-A-B/1st-year-C/assets/140503259/8e43bde5-f1ed-4fe5-8a1f-be4e77fba06f)
+
+
 
 Access Structure Members
 We can access structure members by using the ( . ) dot operator.
@@ -55,3 +58,7 @@ Start =>  declare structure and its members => define its instance => put inputs
 
 Explanation of the algorithm:
 In this code we declare structure and its members. Then define its instance. Take inputs of the employee. Then print the employees details. Then take information of work done by employee. Based on the work done give the employee an increment or decrement in annual salry and promotion or demotion as well.
+
+
+![image](https://github.com/M-S-A-B/1st-year-C/assets/140503259/b04d2e9c-dcfe-4024-a10d-9935cd8f3c58)
+
