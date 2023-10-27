@@ -1,0 +1,62 @@
+#include<stdio.h>
+struct employee
+{
+char name[30];
+int id;
+int hours;
+int prj;//projects
+int hld;//holidays
+int slr;//salary
+};
+
+int main()
+{
+int k,point=0,salary;
+struct employee e[k];
+for(k=1;k<=2;k++)
+{
+printf("enter your name: \n");
+scanf("%s",e[k].name);
+printf("enter your id:\n");
+scanf("%d",&e[k].id);
+printf("enter number of hours worked :\n");
+scanf("%d",&e[k].hours);
+printf("enter number of projects completed:\n");
+scanf("%d",&e[k].prj);
+printf("enter number of holidays taken:\n");
+scanf("%d",&e[k].hld);
+printf("enter your current per annum salary:\n");
+scanf("%d",&e[k].slr);
+}
+
+for(k=1;k<=2;k++)
+{
+if(e[k].hours>1500)
+point++;
+if(e[k].prj>15)
+point++;
+if(e[k].hld<60)
+point++;
+if(point==3)
+{
+salary=(e[k].slr)+(0.3)*(e[k].slr);
+printf("%s your new salary is :%d\n",e[k].name, salary);
+}
+else if(point==2)
+{
+salary=(e[k].slr)+(0.2)*(e[k].slr);
+printf("%s your new salary is :%d\n",e[k].name, salary);
+}
+else if(point==1)
+{
+printf("your salary has not increased this year");
+printf("%s your new salary is :%d\n",e[k].name, salary);
+}
+else
+{
+printf("your have been demoted");
+printf("%s your new salary is :%d\n",e[k].name, salary);
+}
+}
+return 0;
+}
